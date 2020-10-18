@@ -5,15 +5,15 @@
 অবজেক্ট ওরিয়েন্টেড প্রোগ্রামিং এ, *class* হলো এমন একটি কোড টেম্পলেট যেটি কিছু ভ্যরিয়াবল ও মেথড এর শুরুর অবস্থা ও আচরণ ধরে রাখে এবং এটিকে পরবর্তীতে বর্ধিত করে ব্যবহার করা যায়।
 ```
 
-In practice, we often need to create many objects of the same kind, like users, or goods or whatever.
+ব্যবহারিক ক্ষেত্রে আমাদের প্রায়ই একই ধরনের অবজেক্ট তৈরি করতে হয়। যেমনঃ users, goods বা অন্যকিছু।
 
-As we already know from the chapter <info:constructor-new>, `new function` can help with that.
+<info:constructor-new>, এই চ্যাপ্টার থেকে আমরা ইতোমধ্যে জানি যে, `new function` দিয়েও আমরা এই কাজটি করতে পারি।
 
-But in the modern JavaScript, there's a more advanced "class" construct, that introduces great new features which are useful for object-oriented programming.
+কিন্তু মডার্ন জাভাস্ক্রিপ্টে আরো এডভান্স "class" রয়েছে, যা আমাদের আরো অনেক ভালো ও দরকারি ফিচার এর সাথে পরিচয় করিয়েছে। যা অবজেক্ট ওরিয়েন্টেড প্রোগ্রামিং এ খুবই দরকারি।
 
-## The "class" syntax
+## "class" এর গঠন
 
-The basic syntax is:
+মুল গঠন:
 ```js
 class MyClass {
   // class methods
@@ -25,11 +25,11 @@ class MyClass {
 }
 ```
 
-Then use `new MyClass()` to create a new object with all the listed methods.
+এখন আমরা `new MyClass()` লিখে নতুন অবজেক্ট তৈরি করতে পারি ভেতরের মেথড গুলো সহ।
 
-The `constructor()` method is called automatically by `new`, so we can initialize the object there.
+ `constructor()` মেথডটি `new` দ্বারা স্বয়ংক্রিয় ভাবে কল হয়, তাই আমরা এইখানে অবজেক্ট শুরু করতে পারি। 
 
-For example:
+যেমন:
 
 ```js run
 class User {
@@ -44,14 +44,14 @@ class User {
 
 }
 
-// Usage:
+// ব্যবহার:
 let user = new User("John");
 user.sayHi();
 ```
 
-When `new User("John")` is called:
-1. A new object is created.
-2. The `constructor` runs with the given argument and assigns `this.name` to it.
+যখন `new User("John")` ডাকা হয়:
+1. একটি নতুন অবজেক্ট তৈরি হয়।
+2. `constructor` টি আর্গুমেন্ট নিয়ে রান করে এবং `this.name` এ আর্গুমেন্ট টি এসাইন করে দেয়।
 
 ...Then we can call object methods, such as `user.sayHi()`.
 
