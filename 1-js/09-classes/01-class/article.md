@@ -1,8 +1,8 @@
 
 # Class basic syntax
 
-```quote author="Wikipedia"
-In object-oriented programming, a *class* is an extensible program-code-template for creating objects, providing initial values for state (member variables) and implementations of behavior (member functions or methods).
+```quote author="উইকিপিডিয়া"
+অবজেক্ট ওরিয়েন্টেড প্রোগ্রামিং এ, *class* হলো এমন একটি কোড টেম্পলেট যেটি কিছু ভ্যরিয়াবল ও মেথড এর শুরুর অবস্থা ও আচরণ ধরে রাখে এবং এটিকে পরবর্তীতে বর্ধিত করে ব্যবহার করা যায়।
 ```
 
 In practice, we often need to create many objects of the same kind, like users, or goods or whatever.
