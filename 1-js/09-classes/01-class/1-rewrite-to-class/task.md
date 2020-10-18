@@ -4,6 +4,6 @@ importance: 5
 
 # Rewrite to class
 
-The `Clock` class is written in functional style. Rewrite it the "class" syntax.
+`Clock` ক্লাসটি ফাংশনাল পদ্ধতিতে লেখা আছে। এটিকে "class" পধতিতে লিখুন।
 
-P.S. The clock ticks in the console, open it to see.
+বিঃদ্রঃ ঘড়িটি কনসোলে চলবে। দেখতে হলে কনসোলে যান।
